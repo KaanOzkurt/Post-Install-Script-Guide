@@ -1,7 +1,7 @@
 # Setup-Script-Guide
 How to create a script (automation) for installations, restoring settings for after reinstallation of Windows. Researching, computer knowledge and testing is required.
 
-Instructions:
+### Instructions:
   - Create a "files" folder and a bat file "TheScript".
   - Copy your installations to files.
   - Open thescript.bat
@@ -22,8 +22,11 @@ Instructions:
   sc config "WSearch" start=disabled
   sc stop "WSearch"
   ```
+  - Rearrange the steps (sort)
+  - Move the folder to a safe place (backup)
+  - After reinstalling your Windows you can now run TheScript.bat AS ADMINISTRATOR
   
-Tips:
+### Tips:
   - Use portable software for your general usage as much as you can.
   - If you cant find any portable versions then look for a silent installs online. Also you can check if installation has silent install method. You can use powershell to look for parameters: ```something.exe /?```
   - Probably you wont use a program without changing its settings so you need to backup its settings. Look inside:
