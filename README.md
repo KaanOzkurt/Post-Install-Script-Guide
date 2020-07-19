@@ -25,6 +25,7 @@ Tips:
 ```
 Regedit: HKEY_CURRENT_USER\Software
          HKEY_LOCAL_MACHINE\SOFTWARE
+         
 File Paths: Installation Folder
             Documents
             C:\Users\YOURNAME\AppData subfolders
@@ -35,3 +36,14 @@ File Paths: Installation Folder
   - Add ```@echo off``` to the top of thescript if you dont want console outputs while using thescript.
   - Include ```cd``` (change directory) in every step to ensure it works normally after you rearrange thescript.
   - Some installations (.exe) work differently. So you should use ```pause``` rather than ```start /wait installchrome.exe```
+  - You cant start windows 10 settings app with scripts.
+  - Some shortcuts:
+```
+systempropertiesadvanced.exe - the system properties panel. its inside system32.
+mmsys.cpl - audio panel
+intl.cpl - region panel
+timedate.cpl - time and date panel
+taskmgr.exe - task manager. its inside system32
+ms-windows-store: - microsoft store. ":" included in the shortcut.
+powercfg.cpl - power plans panel. check ```powercfg /?``` to import/export power plans
+```
