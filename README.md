@@ -23,6 +23,7 @@ Researching, computer knowledge and testing is required.
   sc config "WSearch" start=disabled
   sc stop "WSearch"
   ```
+  - To show up a folder ```start "D:\Format\Shortcuts"```
   - Rearrange the steps (sort)
   - Move the folder to a safe place (backup)
   - After reinstalling your Windows you can now run TheScript.bat AS ADMINISTRATOR
