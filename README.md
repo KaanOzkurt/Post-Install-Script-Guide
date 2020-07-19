@@ -17,6 +17,11 @@ Preparations:
   mmsys.cpl
   pause
   ```
+  - To stop a service: (first line disables start, second line stops the service. check ```services.msc``` about service names.)
+  ```
+  sc config "WSearch" start=disabled
+  sc stop "WSearch"
+  ```
   
 Tips:
   - Use portable software for your general usage as much as you can.
@@ -45,5 +50,5 @@ intl.cpl - region panel
 timedate.cpl - time and date panel
 taskmgr.exe - task manager. its inside system32
 ms-windows-store: - microsoft store. ":" included in the shortcut.
-powercfg.cpl - power plans panel. check ```powercfg /?``` to import/export power plans
+powercfg.cpl - power plans panel. check powercfg /? to import/export power plans
 ```
