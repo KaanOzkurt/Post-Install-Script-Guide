@@ -29,6 +29,7 @@ Researching, computer knowledge and testing is required.
   - After reinstalling your Windows you can now run TheScript.bat AS ADMINISTRATOR
   
 ### Tips:
+  - Check out [My Script](https://github.com/KaanOzkurt/Setup-Script-Guide/blob/master/example-of-mine.bat) to get an idea of what can be done.
   - Use portable software for your general usage as much as you can.
   - If you cant find any portable versions then look for a silent installs online. Also you can check if installation has silent install method. You can use powershell to look for parameters: ```something.exe /?```
   - Probably you wont use a program without changing its settings so you need to backup its settings. Look inside:
