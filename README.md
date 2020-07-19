@@ -1,5 +1,6 @@
 # Setup-Script-Guide
-How to create a script (automation) for installations, restoring settings for after reinstallation of Windows. Researching, computer knowledge and testing is required.
+How to create a script (automation) for installations, restoring settings for after reinstallation of Windows.
+Researching, computer knowledge and testing is required.
 
 ### Instructions:
   - Create a "files" folder and a bat file "TheScript".
