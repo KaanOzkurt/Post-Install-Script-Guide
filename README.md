@@ -7,7 +7,7 @@ Researching, computer knowledge and testing is required.
   - Copy your installations to files.
   - Open thescript.bat
   - Add ```echo INSTALLING CHROME``` (example to inform about chrome installation) for every step and make steps a block.
-  - Before starting an .exe or .bat access to its directory ```cd "D:\Format\Files\"```.
+  - Before starting an .exe or .bat access to its directory ```cd "D:\Format\Files\"```. If you gonna change between drives type ```c:``` or ```d:``` before using cd command.
   - To start an .exe or .bat ```start /wait installchrome.exe``` (/wait parameter is optional. it pauses thescript until the mentioned exe closed. So if you are installing something include /wait. And if you just starting a program then dont include it.)
   - To apply a .reg file ```regedit.exe /S "initial.reg"``` (/S parameter applies reg file without asking to apply.)
   - To copy a single file ```COPY "settings.json" "C:\Users\Kaan\AppData\Roaming\Code\User\settings.json"``` (the settings.json is in current directory. If the file isnt then you can just copy paste whole path like the destination.)
