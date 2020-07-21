@@ -1,4 +1,4 @@
-# Setup-Script-Guide
+# How to Create a Post Install Script
 How to create a script (automation) for installations, restoring settings for after reinstallation of Windows.
 Researching, computer knowledge and testing is required.
 
