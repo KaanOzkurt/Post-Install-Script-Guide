@@ -28,8 +28,8 @@ start Firefox Register.exe
 pause
 
 echo PIN SHORTCUTS
-start "D:\Format\Shortcuts"
-pause
+cd "D:\Format\Shortcuts"
+COPY "D:\Format\Shortcuts\*.lnk" "C:\Users\Kaan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs"
 
 echo INSTALLING INTERNET DOWNLOAD MANAGER
 cd "D:\Format\Files\"
@@ -37,8 +37,10 @@ start /wait idm.exe
 echo RESTORING IDM SETTINGS
 regedit.exe /S "idm.reg"
 echo STARTING IDM
+C:
 cd "C:\Program Files (x86)\Internet Download Manager"
 start IDMan.exe
+D:
 
 echo INSTALLING WINRAR
 cd "D:\Format\Files\"
@@ -47,7 +49,6 @@ start /wait winrar.exe
 echo SETTING SHAREX
 cd "D:\Programlar\ShareX\"
 start ShareX.exe
-pause
 
 echo SETTING MEM REDUCT
 cd "D:\Programlar\Mem Reduct\"
@@ -79,7 +80,6 @@ cd "D:\Format\Files\"
 start /wait consoleact.exe /win=act
 
 echo MANUAL SETTINGS
-cd "C:\Windows\System32"
 
 echo PERFORMANCE SETTINGS
 start /wait systempropertiesadvanced.exe
@@ -113,22 +113,24 @@ pause
 
 echo INSTALLING Riva Tuner Statistics Server
 cd "D:\Format\Files\"
-start /wait "rtss.exe" /S /D="C:\Program Files (x86)\RivaTuner Statistics Server"
+start /wait rtss-setup.exe
 echo RESTORING RTSS SETTINGS
 COPY "Config" "C:\Program Files (x86)\RivaTuner Statistics Server\Profiles\Config"
 COPY "Global" "C:\Program Files (x86)\RivaTuner Statistics Server\Profiles\Global"
 echo STARTING RTSS
-cd "C:\Program Files (x86)\RivaTuner Statistics Server"
+C:
+cd "C:\Program Files (x86)\RivaTuner Statistics Server\"
 start rtss.exe
+D:
 
 echo INSTALL ADDITIONAL DRIVERS
 cd "D:\Format\Files\SDIO"
 start /wait SDIO_x64_R715.exe
 
 echo NVIDIA SETTINGS
+C:
 cd "C:\Program Files\NVIDIA Corporation\Control Panel Client"
-start nvcplui.exe 
-pause
+start /wait nvcplui.exe
 
 echo RESTORE STEAM GAMES
 cd "D:\Programlar\Steam\"
@@ -145,4 +147,4 @@ start /wait Code.exe
 
 echo SET UP UNITY HUB AND UNITY ENGINE
 cd "D:\Programlar\Unity Hub"
-start /wait Unity Hub.exe
+start Unity Hub.exe
