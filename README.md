@@ -11,7 +11,7 @@ Researching, computer knowledge and testing is required.
   - To start an .exe or .bat ```start /wait installchrome.exe``` (/wait parameter is optional. it pauses thescript until the mentioned exe closed. So if you are installing something include /wait. And if you just starting a program then dont include it.)
   - To apply a .reg file ```regedit.exe /S "initial.reg"``` (/S parameter applies reg file without asking to apply.)
   - To copy a single file ```COPY "settings.json" "C:\Users\Kaan\AppData\Roaming\Code\User\settings.json"``` (the settings.json is in current directory. If the file isnt then you can just copy paste whole path like the destination.)
-  - To copy a folder ```COPY "D:\Format\Files\somechromefiles" "C:\Users\Kaan\AppData\Local"``` (copies the folder inside the destination; ../local/somechromefiles)
+  - To copy a folder ```COPY "D:\Format\Files\somechromefiles" "C:\Users\Kaan\AppData\Local\somechromefiles"```
   - You can /wait for .exe or .bat files to finish but not for .cpl and user actions. Add ```pause``` to wait for user to press a key to continue.
   - An example for user actions: open the sounds panel and wait for the user to change sound settings:
   ```
