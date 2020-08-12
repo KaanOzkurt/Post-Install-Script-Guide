@@ -10,8 +10,8 @@ Researching, computer knowledge and testing is required.
   - Before starting an .exe or .bat access to its directory ```cd "D:\Format\Files\"```. If you gonna change between drives type ```c:``` or ```d:``` before using cd command.
   - To start an .exe or .bat ```start /wait installchrome.exe``` (/wait parameter is optional. it pauses thescript until the mentioned exe closed. So if you are installing something include /wait. And if you just starting a program then dont include it.)
   - To apply a .reg file ```regedit.exe /S "initial.reg"``` (/S parameter applies reg file without asking to apply.)
-  - To copy a single file ```COPY "settings.json" "C:\Users\Kaan\AppData\Roaming\Code\User\settings.json"``` (the settings.json is in current directory. If the file isnt then you can just copy paste whole path like the destination.)
-  - To copy a folder ```COPY "D:\Format\Files\somechromefiles" "C:\Users\Kaan\AppData\Local\somechromefiles"```
+  - To copy a single file ```COPY "settings.json" "C:\Users\Kaan\AppData\Roaming\Code\User\ /Y"``` /Y parameter forces to overwrite the file if it exists. (the settings.json is in current directory thats why i didnt include whole path.)
+  - To copy a folder ```COPY "D:\Format\Files\somechromefiles" "C:\Users\Kaan\AppData\Local\"```
   - You can /wait for .exe or .bat files to finish but not for .cpl and user actions. Add ```pause``` to wait for user to press a key to continue.
   - An example for user actions: open the sounds panel and wait for the user to change sound settings:
   ```
@@ -47,14 +47,4 @@ File Paths: Installation Folder
   - Add ```@echo off``` to the top of thescript if you dont want console outputs while using thescript.
   - Include ```cd``` (change directory) in every step to ensure it works normally after you rearrange thescript.
   - Some installations (.exe) work differently. So you should use ```pause``` rather than ```start /wait installchrome.exe```
-  - You cant start windows 10 settings app with scripts.
-  - Some shortcuts:
-```
-systempropertiesadvanced.exe - the system properties panel. its inside system32.
-mmsys.cpl - audio panel
-intl.cpl - region panel
-timedate.cpl - time and date panel
-taskmgr.exe - task manager. its inside system32
-ms-windows-store: - microsoft store. ":" included in the shortcut.
-powercfg.cpl - power plans panel. check powercfg /? to import/export power plans
-```
+  - Some [shortcuts](https://www.tactig.com/complete-list-windows-10-run-commands/)
